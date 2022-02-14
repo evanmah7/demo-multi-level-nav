@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Multi Level Nav</h1>
+        <nav>
+            <!-- otcreate a seonc dlevel nav, nest a ul lsit inside of an exist li element-->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li>
+                    <a href="#">Books</a>
+                    <!-- add a second level of nav links that belongs to 'books'-->
+                    <ul class="submenu">
+                        <li><a href="#">JavaScript for Web Designers</a></li>
+                        <li><a href="#">Git for Humans</a></li>
+                        <li><a href="#">Designing for Touch</a></li>
+                        <li><a href="#">Progressive Web Apps</a></li>
+                        <li><a href="#">The new CSS Layout</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Front End Dev Con</a></li>
+                        <li><a href="#">React SUmmit</a></li>
+                        <li><a href="#">Designing for Performance</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Memberships</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
